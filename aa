@@ -1,0 +1,137 @@
+
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .schedule {
+            margin-bottom: 20px;
+        }
+        .day {
+            background-color: #e7f3fe;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .day h3 {
+            margin: 0;
+            color: #0056b3;
+        }
+        .day p {
+            margin: 5px 0;
+        }
+        .free-time, .sleep-time {
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Study Planner</h1>
+        <p>This study planner is organized according to your exam schedule. Make sure to follow it daily to complete your portion in time for the exams!</p>
+
+        <div class="schedule">
+            <h2>Wednesday, 28th August 2024 - Computer</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Chapter 2 - History of computers and Chapter 3 - Advanced features in Microsoft Excel.</p>
+                <p>Review Chapter 12 - Web 2.0 Tools on the World Wide Web.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Thursday, 29th August 2024 - Hindi</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Lessons 3, 4, 6, and 7. Practice all grammar exercises.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Friday, 30th August 2024 - Konkani/French</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>For Konkani: Study Lessons 8, 11, and 14. Review the poem "बापूजी" and practice grammar.</p>
+                <p>For French: Focus on Lessons 3, 4, and 5. Review all grammar and Culture Civilisation.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Saturday, 31st August 2024 - Science</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Lessons 4, 12, and 14. Review core content from Lessons 2 and 11.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Monday, 2nd September 2024 - Social Studies</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Lessons 2, 7, 10, 12, and 17. Review your notes and practice key terms.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Tuesday, 3rd September 2024 - Math</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Chapters 1, 2, 3, and 4. Review Introduction to graphs and core content on squares and square roots.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Wednesday, 4th September 2024 - English</h2>
+            <div class="day">
+                <h3>Study Plan:</h3>
+                <p>Focus on Lessons 5, 6, and 7 in Literature. Review all grammar and writing skills.</p>
+                <p class="free-time">Free Time: 1 hour</p>
+                <p class="sleep-time">Sleep by: 11:00 PM</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+# Save the content to an HTML file
+file_path = "/mnt/data/study_planner.html"
+with open(file_path, "w") as file:
+    file.write(html_content)
+
+file_path
